@@ -1,10 +1,7 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 const article = ({ article }) => {
 
-  const router = useRouter()
-  const { id } = router.query
   return (
     <div>
       <>
@@ -17,8 +14,6 @@ const article = ({ article }) => {
   )
 }
 
-export default article
-
 export const getServerSideProps = async context => {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
   const article = await res.json()
@@ -29,3 +24,7 @@ export const getServerSideProps = async context => {
     }
   }
 }
+
+export default article
+
+

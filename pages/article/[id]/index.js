@@ -1,12 +1,11 @@
 import Link from 'next/link'
 
 const article = ({ article }) => {
-
   return (
     <div>
       <>
-        <h1>{article.title}</h1>
-        <p>{article.body}</p>
+        <h1>{article.title.rendered}</h1>
+        <p>{article.content.rendered}</p>
         <br />
         <Link href='/'>Go Back</Link>
       </>
@@ -15,7 +14,7 @@ const article = ({ article }) => {
 }
 
 export const getServerSideProps = async context => {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
+  const res = await fetch(`https://www.londondaily.net/wp-json/wp/v2/posts/${context.params.id}`)
   const article = await res.json()
 
   return {

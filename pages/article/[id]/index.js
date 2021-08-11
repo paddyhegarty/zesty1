@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 const article = ({ article }) => {
+
   return (
     <div>
       <>

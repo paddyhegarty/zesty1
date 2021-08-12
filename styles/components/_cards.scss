@@ -1,0 +1,214 @@
+﻿.card-news {
+  display: block;
+  box-shadow: -1px 5px 12px -4px #000000;
+  @include hover-lift;
+  .content {
+    background-color: #be4a33;
+    color: white;
+    padding: 2rem;
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: white;
+    }
+    h4 {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      height: 8rem;
+      color: white;
+    }
+    span {
+      color: white;
+    }
+  }
+  .img {
+    height: 250px;
+    @include bg-img(top center, cover);
+  }
+  .szicon-right-caret {
+    font-size: 0.7rem;
+    padding-left: 1rem;
+  }
+  &--why-belfast {
+    .content {
+      background-color: $col-dark-background;
+      h3 {
+        font-family: $font-main-bold;
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+        color: white;
+        font-weight: bold;
+        line-height: 1;
+      }
+      h4 {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+        text-transform: none;
+        font-weight: normal;
+        height: 8rem;
+        color: white;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+.card-key-sector {
+  display: block;
+  padding: 2.5rem 1.5rem;
+  border-bottom: solid 1px #2c3d4f1a;
+  margin-bottom: 1rem;
+  background-color: #f8f8f8;
+  box-shadow: -1px 5px 12px -4px #00000017;
+  @include fader;
+  .content {
+    color: $col-text-main;
+    padding: 0 2rem 0 0;
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .excerpt {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin-bottom: 2rem;
+    }
+  }
+  .img {
+    height: 215px;
+    border: solid 1px #0000002e;
+    @include bg-img(top center, cover);
+  }
+  .szicon-right-caret {
+    font-size: 0.7rem;
+    padding-left: 1rem;
+  }
+  &--why-belfast {
+    .content {
+      background-color: $col-dark-background;
+    }
+  }
+  &--news-item {
+    .content {
+      .published-date {
+        font-size: 1rem;
+        .date {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.card-map {
+  display: block;
+  padding: 1rem;
+  border-bottom: solid 1px #e3e3e3;
+  transition: background-color 0.3s;
+  .left-side {
+    min-width: 100px;
+    text-align: center;
+  }
+  .content {
+    margin-top: 0.7rem;
+  }
+  .img {
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  .place {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: $font-main-bold;
+    margin-bottom: 0;
+  }
+  &:hover {
+    background-color: #e3e3e3;
+  }
+}
+
+.card-facts {
+  display: block;
+  padding: 1rem;
+  .icon-side {
+    background-color: red;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: solid 23px red;
+  }
+  .content {
+    padding: 1rem 2rem;
+  }
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: $font-main-bold;
+    margin-bottom: 0;
+  }
+  &--dark-orange {
+    .icon-side {
+      background-color: #be4a33;
+      border: solid 23px #be4a33;
+    }
+  }
+  &--green {
+    .icon-side {
+      background-color: #115b63;
+      border: solid 23px #115b63;
+    }
+  }
+  &--light-blue {
+    .icon-side {
+      background-color: #578bc6;
+      border: solid 23px #578bc6;
+    }
+  }
+}
+
+.card-key-factors {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-bottom: 1rem;
+  }
+  .content {
+    padding: 1rem 2rem;
+  }
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: $font-main-bold;
+    margin-bottom: 0;
+  }
+  &--cyan {
+    .icon {
+      background-color: #03a1a6;
+      border: solid 23px #03a1a6;
+    }
+  }
+  &--dark-blue {
+    .icon {
+      background-color: #0076a3;
+      border: solid 23px #0076a3;
+    }
+  }
+}

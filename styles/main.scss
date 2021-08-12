@@ -1,0 +1,20 @@
+﻿@charset "UTF-8";
+
+//== 1. general configuration
+@import "abstracts/_variables.scss", "abstracts/_functions.scss", "abstracts/_mixins.scss";
+
+//== 2. vendor
+@import "vendor/_vendor.scss";
+
+//== 3. base
+@import "base/_base.scss", "base/_fonts.scss", "base/_typography.scss", "base/_helpers.scss", "base/_animations.scss";
+
+//== 4. layout
+@import "layout/_header.scss", "layout/_footer.scss", "layout/_sections.scss", "layout/_navigation.scss";
+
+//== 5. components
+@import "components/_buttons.scss", "components/_cards.scss", "components/pagination", "components/breadcrumbs", "components/searchfilter",
+  "components/_wysiwyg.scss", "components/_forms.scss", "components/maps";
+
+//== 6. media and amended sheets
+@import "media/_media-small.scss", "media/_media-medium.scss", "media/_media-large.scss", "media/_accessibility.scss", "media/_print.scss";

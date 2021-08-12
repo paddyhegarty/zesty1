@@ -1,0 +1,72 @@
+﻿.skip-to-content-link {
+  background: #363636;
+  color: #fff;
+  font-family: $font-main;
+  line-height: 1;
+  left: 0;
+  padding: 0.5rem 0.8rem;
+  position: absolute;
+  transform: translateY(-100%);
+
+  &:focus {
+    transform: translateY(0%);
+    color: #fff;
+  }
+}
+
+.btn-key-sectors {
+  cursor: pointer;
+  font-family: "Colfax Medium", sans-serif;
+  padding: 1rem 2rem;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+  background-color: #1779ba;
+  color: white;
+  &:hover,
+  &:focus {
+    background-color: lighten(#1779ba, 15);
+  }
+}
+
+.btn-login {
+  background-color: #035b5e;
+  border: solid 1px #44d3c1;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color, border, color, 0.3s;
+  &:hover,
+  &:focus {
+    background-color: $col-dark-background;
+    border: solid 1px $col-light-foreground;
+    color: $col-light-foreground;
+  }
+}
+
+.btn-search {
+  color: white;
+  background-color: $col-dark-background;
+  height: 3.5rem;
+  width: 30%;
+  cursor: pointer;
+  @include fader;
+  &--contact-button {
+    background-color: lighten($col-dark-background, 10);
+    width: 100%;
+    height: unset;
+    text-align: center;
+    padding: 1rem;
+    &:hover {
+      color: white;
+    }
+  }
+  &--close {
+    background-color: #3444551f;
+    width: 20%;
+    min-width: 120px;
+    span {
+      padding: 0 0 0 1rem;
+    }
+  }
+}

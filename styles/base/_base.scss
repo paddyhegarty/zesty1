@@ -1,0 +1,36 @@
+﻿html {
+  &.access-size-small {
+    font-size: 100% !important;
+  }
+
+  &.access-size-medium {
+    font-size: 110% !important;
+  }
+
+  &.access-size-large {
+    font-size: 120% !important;
+  }
+
+  &.access-colour-greyscale {
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  &.access-colour-contrast {
+    /*set in the _accessibility.scss*/
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* need to override foundation grid container width */
+
+.grid-container,
+hr {
+  max-width: 75rem;
+}

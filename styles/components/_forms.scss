@@ -1,0 +1,176 @@
+﻿/*general forms*/
+.form-general {
+	margin-bottom: 1em;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-bottom: 1rem;
+		font-weight: 600;
+		text-align: left;
+		color: $col-text-wysiwyg;
+	}
+
+	h1 {
+		font-size: 1.8625rem;
+	}
+
+	h2 {
+		font-size: 1.8625rem;
+	}
+
+	h3 {
+		font-size: 1.7625rem;
+	}
+
+	h4 {
+		font-size: 1.3625rem;
+	}
+
+	h5 {
+		font-size: 1.2625rem;
+	}
+
+	h6 {
+		font-size: 1rem;
+	}
+
+	hr {
+		margin: 1.5rem auto 1.5rem auto;
+		border-color: #e4e4e4;
+	}
+
+	li {
+		margin-bottom: 0.6em;
+	}
+
+	label,
+	legend {
+		color: $col-text-form-label;
+		font-weight: 400;
+		font-size: 1em;
+		display: inline-block;
+		margin-bottom: 0.3em;
+	}
+
+	input,
+	select {
+		background-color: $col-form-input-bg;
+		border: 0;
+		box-shadow: none !important;
+		font-size: 0.9em;
+		margin-bottom: 0;
+		margin-bottom: 0.8em;
+
+		&[type="file"],
+		&[type="checkbox"],
+		&[type="radio"] {
+			box-shadow: none;
+		}
+
+		&[type="number"] {
+		}
+	}
+
+	select {
+		background-color: $col-form-input-bg;
+	}
+
+	textarea {
+		background-color: $col-form-input-bg;
+		border: 0;
+		box-shadow: none;
+		height: 150px;
+		font-size: 0.96em;
+		font-weight: 400;
+		margin-bottom: 0.3em;
+	}
+
+	fieldset {
+		label {
+			display: inline-block;
+			font-weight: 400;
+			font-size: 0.86em;
+		}
+	}
+
+	.checkbox-list {
+		background-color: #f3f3f3;
+		padding: .8rem 1.2rem;
+		border-radius: 3px;
+		border: 1px solid $col-text-form-label;
+
+		label {
+			font-family: $font-main;
+			font-size: .98rem;
+		}
+
+		input[type=checkbox], input[type=radio] {
+			margin-bottom: .6rem;
+			margin-right: .3rem;
+		}
+	}
+
+	.error-field {
+		border-color: $col-form-error;
+		background-color: lighten($col-form-error, 68%);
+	}
+
+	.error-text {
+		display: block;
+		color: $col-form-error;
+		font-size: .92rem;
+		margin-top: -.8rem;
+		margin-bottom: 1rem;
+	}
+}
+
+
+.msg-sent-ok, .mc4wp-success p {
+	display: block;
+	position: relative;
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 0 0 0.8rem 0;
+	border-left: 4px solid $col-form-success;
+	font-family: $font-main;
+	font-size: 1.05rem;
+	color: $col-text-main;
+	background-color: lighten($col-form-success, 38%);
+	line-height: 1.2;
+	border-radius: 2px;
+	/*&:before {
+		content: "\e913";
+		font-family: 'icomoon' !important;
+		font-size: 1.4rem;
+		position: absolute;
+		top: .78rem;
+		left: .8rem;
+		color: #60b676;
+	}*/
+}
+
+.msg-validation-error, .mc4wp-error p {
+	display: block;
+	position: relative;
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 0 0 0.8rem 0;
+	border-left: 4px solid $col-form-error;
+	font-family: $font-main;
+	font-size: 1.05rem;
+	color: $col-text-main;
+	background-color: lighten($col-form-error, 65%);
+	line-height: 1;
+	border-radius: 2px;
+	/*&:before {
+		content: "\e912";
+		font-family: 'icomoon' !important;
+		font-size: 1.4rem;
+		position: absolute;
+		top: .78rem;
+		left: .8rem;
+		color: #91071a;
+	}*/
+}

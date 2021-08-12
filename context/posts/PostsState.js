@@ -11,9 +11,8 @@ const PostsState = props => {
   const [state, dispatch] = useReducer(postsReducer, initialState);
 
   const getPosts = async () => {
-
     try {
-      const res = await fetch(`https://www.londondaily.net/wp-json/wp/v2/posts`)
+      const res = await fetch(`https://www.londondaily.net/wp-json/wp/v2/posts/10`)
       dispatch({ type: GET_POSTS, payload: res })
     } catch (error) {
       console.log(error)

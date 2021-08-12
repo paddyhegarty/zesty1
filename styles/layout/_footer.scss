@@ -1,0 +1,48 @@
+﻿.wrapper-footer {
+  background-color: $col-dark-background;
+  .content-top {
+    text-align: left;
+    padding: 2rem 0;
+    box-shadow: inset -4px 10px 19px 2px rgba(47, 50, 50, 0.3);
+    .title {
+      text-align: left;
+      display: block;
+      padding-bottom: 1rem;
+      color: white;
+      border-bottom: solid 1px #ffffff38;
+      margin-bottom: 1rem;
+      @include fader;
+    }
+    img {
+      max-width: 250px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      text-align: left;
+      a {
+        color: #ffffff99;
+        padding-right: 2rem;
+        font-size: 0.9rem;
+        @include fader;
+      }
+    }
+  }
+  .content-base {
+    background-color: darken($col-dark-background, 5);
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      padding: 0.7rem;
+      margin: 0;
+      font-size: 0.8rem;
+      a {
+        color: white;
+        padding-left: 2rem;
+        @include fader;
+      }
+    }
+  }
+}

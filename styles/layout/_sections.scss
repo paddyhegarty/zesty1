@@ -1,0 +1,79 @@
+﻿.section-intro,
+.wrapper-connections,
+.wrapper-content,
+.wrapper-logo-gallery,
+.wrapper-map,
+.wrapper-facts,
+.wrapper-opportunites-detail,
+.wrapper-key-sectors,
+.wrapper-news,
+.wrapper-why-belfast {
+  margin: 2rem 0 4rem;
+}
+
+.wrapper-news {
+  background-color: #f8f8f8;
+  padding: 2rem 0 5rem;
+}
+
+.wrapper-quote {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  position: relative;
+  margin-bottom: 1px;
+  .quote-content {
+    .title {
+      font-size: 3rem;
+      font-family: $font-title-bold;
+      color: white;
+      margin-top: 8rem;
+      padding-bottom: 8rem;
+      position: relative;
+      text-shadow: 1px 1px 3px $col-dark-background;
+    }
+  }
+  cite {
+    color: white;
+    background-color: $col-dark-background;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+    &::before {
+      content: none;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.side-bar {
+  .title {
+    font-size: 1.8rem;
+    font-family: $font-main-bold;
+    font-weight: bold;
+    color: #03a1a6;
+    margin-bottom: 1rem;
+  }
+  .sub-title {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: $font-main-bold;
+    margin-bottom: 0rem;
+  }
+  .detail {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}

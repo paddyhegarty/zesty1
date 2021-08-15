@@ -1,5 +1,4 @@
 const IntroSection = ({ introPost }) => {
-  console.log("INTRO POST", introPost)
   return (
     <div className="grid-container">
       <div className="grid-x">

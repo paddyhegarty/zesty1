@@ -12,7 +12,7 @@ const NumbersSection = ({ posts }) => {
       <div className="grid-x grid-padding-x medium-up-5">
         {articles.slice(0, NO_ITEMS).map((article) => { // use slice to limit the number of items displayed
           return (
-            <div className="cell">
+            <div className="cell" key={article.id}>
               <ArticleItem article={article} key={article.id} />
             </div>
           )

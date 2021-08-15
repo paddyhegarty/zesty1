@@ -38,8 +38,7 @@ const NewsLetterForm = () => {
 
   return (
     <div>
-      <form>
-        <label htmlFor="your-email">Somebody's name</label>
+      <form>s
         <input id="your-email" type="text" name="your-email" onChange={onChange} required />
         <button type="submit" onClick={formSubmissionHandler}>Submit</button>
       </form>

@@ -20,7 +20,7 @@ const TabbedSection = ({ posts, cats }) => {
           <Tabs>
             {articles.slice(0, NO_ITEMS).map((article, x) => { // use slice to limit the number of items displayed
               return (
-                <div label={eval(x + 1)}>
+                <div label={x.toString()} key={x}>
                   <ArticleItem article={article} key={article.id} />
                 </div>
               )

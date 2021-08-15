@@ -15,7 +15,7 @@ const article = ({ article }) => {
 }
 
 export const getServerSideProps = async context => {
-  const res = await fetch(`https://www.londondaily.net/wp-json/wp/v2/posts/${context.params.id}`)
+  const res = await fetch(`http://localhost/wordpress/wp-json/wp/v2/posts/${context.params.id}`)
   const article = await res.json()
 
   return {

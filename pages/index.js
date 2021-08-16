@@ -25,16 +25,16 @@ const Home = ({ articles, categories, newsLetterPost, introPost }) => {
 export default Home
 
 export async function getServerSideProps() {
-  const posts = await fetch(`http://localhost/wordpress/wp-json/wp/v2/posts?per_page=100`)
+  const posts = await fetch(`https://www.londondaily.net/wp-json/wp/v2/posts?per_page=100`)
   const articles = await posts.json()
 
-  const cats = await fetch(`http://localhost/wordpress/wp-json/wp/v2/categories`)
+  const cats = await fetch(`https://www.londondaily.net/wp-json/wp/v2/categories`)
   const categories = await cats.json()
 
-  const singlePost1 = await fetch(`http://localhost/wordpress/wp-json/wp/v2/posts/40`)
+  const singlePost1 = await fetch(`https://www.londondaily.net/wp-json/wp/v2/posts/597`)
   const newsLetterPost = await singlePost1.json()
 
-  const singlePost2 = await fetch(`http://localhost/wordpress/wp-json/wp/v2/posts/42`)
+  const singlePost2 = await fetch(`https://www.londondaily.net/wp-json/wp/v2/posts/594`)
   const introPost = await singlePost2.json()
 
   return {

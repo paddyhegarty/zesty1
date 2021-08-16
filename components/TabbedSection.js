@@ -7,7 +7,7 @@ const TabbedSection = ({ posts, cats }) => {
   const NO_ITEMS = 3;
 
   //let getCategory = cats.filter(item => item.id === CAT_ID);
-  let articles = posts.filter(item => item.categories[0] === CAT_ID)
+  let articles = posts.filter(item => item.categories.includes(CAT_ID))
   //let heading = getCategory[0].name;
 
   return (

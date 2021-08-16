@@ -3,7 +3,7 @@ import ArticleItem from './ArticleItem'
 
 const OurWork = ({ posts, cats }) => {
 
-  const CAT_ID = 3;
+  const CAT_ID = 1;
   const NO_ITEMS = 3;
 
   let getCategory = cats.filter(item => item.id === CAT_ID);

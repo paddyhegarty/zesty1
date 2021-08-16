@@ -2,7 +2,7 @@ import CourseItem from "./CourseItem"
 
 const CoursesSection = ({ posts }) => {
 
-  const CAT_ID = 5;
+  const CAT_ID = 1;
   const NO_ITEMS = 3;
 
   let articles = posts.filter(item => item.categories[0] === CAT_ID)

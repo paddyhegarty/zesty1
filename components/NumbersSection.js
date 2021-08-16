@@ -2,10 +2,10 @@ import ArticleItem from './ArticleItem'
 
 const NumbersSection = ({ posts }) => {
 
-  const CAT_ID = 4;
+  const CAT_ID = 1;
   const NO_ITEMS = 5;
 
-  let articles = posts.filter(item => item.categories[0] === CAT_ID)
+  let articles = posts.filter(item => item.categories.includes(CAT_ID))
 
   return (
     <div className="grid-container">
